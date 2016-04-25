@@ -13,7 +13,7 @@
 		touch: true, // enables a touch fallback
 		onZoomIn: false,
 		onZoomOut: false,
-		magnify: 0.6
+		magnify: 0.35
 	};
 
 	// Core Zoom Logic, independent of event listeners.
