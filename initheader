@@ -1,0 +1,23 @@
+<meta charset='utf-8'/>
+	<title>jQuery Zoom Demo</title>
+	<style>
+		.zoom {
+			display:inline-block;
+			position: relative;
+		}
+		.zoom img {
+			display: block;
+		}
+		.zoom img::selection { background-color: transparent; }
+		#ex2 img:hover { cursor: url(grab.cur), default; }
+		#ex2 img:active { cursor: url(grabbed.cur), default; }
+	</style>
+	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+	<script src='http://cdn.rawgit.com/alexkendall/zoom/master/jquery.zoom.js'></script>
+	<script>
+		$(document).ready(function(){
+			$('#ex1').zoom();
+		});
+	</script>
+
+	initial header
