@@ -123,7 +123,7 @@
 			}());
 
 			img.onload = function () {
-				var zoom = $.zoom(target, source, img, settings.magnify);
+				var zoom = $.zoom(target, source, img, 0.25);
 
 				function start(e) {
 					zoom.init();
