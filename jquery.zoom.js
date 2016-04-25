@@ -13,7 +13,7 @@
 		touch: true, // enables a touch fallback
 		onZoomIn: false,
 		onZoomOut: false,
-		magnify: 0.25
+		magnify: 0.6
 	};
 
 	// Core Zoom Logic, independent of event listeners.
@@ -42,8 +42,8 @@
 				top: 0,
 				left: 0,
 				opacity: 0,
-				width: img.width * 0.25,
-				height: img.height * 0.25,
+				width: img.width * magnify,
+				height: img.height * magnify,
 				border: 'none',
 				maxWidth: 'none',
 				maxHeight: 'none'
@@ -123,7 +123,7 @@
 			}());
 
 			img.onload = function () {
-				var zoom = $.zoom(target, source, img, 0.25);
+				var zoom = $.zoom(target, source, img, settings.magnify);
 
 				function start(e) {
 					zoom.init();
