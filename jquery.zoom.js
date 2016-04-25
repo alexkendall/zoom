@@ -13,7 +13,7 @@
 		touch: true, // enables a touch fallback
 		onZoomIn: false,
 		onZoomOut: false,
-		magnify: 0.5
+		magnify: 10.0
 	};
 
 	// Core Zoom Logic, independent of event listeners.
@@ -119,7 +119,7 @@
 					$target.css('overflow', overflow);
 					$img.remove();
 				});
-				
+
 			}());
 
 			img.onload = function () {
@@ -228,7 +228,7 @@
 							}
 						});
 				}
-				
+
 				if ($.isFunction(settings.callback)) {
 					settings.callback.call(img);
 				}
